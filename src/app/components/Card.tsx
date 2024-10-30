@@ -20,7 +20,7 @@ function Card() {
                 },
                 body: JSON.stringify({
                     product_id: "1",
-                    title: "Una prueba de compra",
+                    title: "Un test de implementación de pago",
                     quantity: 1,
                     unit_price: 50,
                     currency_id: "ARS",
@@ -45,14 +45,14 @@ function Card() {
     }, [])
 
     return (
-        <div className="p-4 flex flex-col items-center w-full max-w-sm outline-black outline-double rounded-sm bg-white">
+        <div className="p-4 flex flex-col items-center w-full max-w-sm outline-black rounded-sm bg-white">
             <div className="py-2">
                 <img src="/images/mplogo.png" alt="Imagen mercado pago" className="w-40" />
             </div>
 
             <div className="flex flex-col gap-3 w-full text-center overflow-hidden">
-                <h2>Comprá una festejo aleatorio</h2>
-                <p>$100</p>
+                <h2>Un test de implementación de pago</h2>
+                <p>$50</p>
                 {
                     preferenceId &&
                     <Wallet initialization={{ preferenceId: preferenceId }} customization={{ texts: { valueProp: 'smart_option' } }} />
